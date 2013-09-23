@@ -10,7 +10,7 @@ There are no keywords set by default, and instead need to be set if that functio
 Functions
 =========
 `keyworder.setOptions(options)`
-----------------------
+--
 
 Sets possible options for the library taking a javascript object.
 
@@ -31,7 +31,7 @@ keyworder.setOptions({
 ```
 
 `keyworder.keywordMatch(text)`
-------------------------------
+--
 
 Takes a string of text and searches through it for a matching keyword. If the `matchCase` variable is set to true, then it will only return values that have the same case as the keywords. Returns the values as an array object.
 
@@ -49,7 +49,7 @@ keyworder.keywordMatch("Roger picked up the orange pumpkin."); //returns ["orang
 ```
 
 `keyworder.stripCommonWords(text, stripPunctuation)`
-----------------------------------------------------
+--
 
 Takes a string of text and strips out the common words (as specified in the common array) from it, returning the result as a string. 
 
@@ -73,7 +73,7 @@ keyworder.stripCommonWords("The yellow sun is high in the blue sky."); //returns
 ```
 
 `keyworder.stripAndMatch(text, stripPunctuation)`
--------------------------------------------------
+--
 
 Takes a string of text and first calls `keyworder.stripCommonWords` on it, then takes the result and calls `keyworder.keywordMatch` on it. Returns an array of matching keywords.
 
@@ -87,7 +87,7 @@ Since the stripping of common words executes first, if you have a keyword that i
 ```javascript
 keyworder.setOptions({common: ["blue", "green", "red"], keywords: ["yellow", "blue", "sun"]});
 keyworder.stripAndMatch("The yellow sun is high in the blue sky."); //returns ["yellow", "sun"]
-```javascript
+```
 
 
 
