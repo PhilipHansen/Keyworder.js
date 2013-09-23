@@ -70,7 +70,7 @@ keyworder.stripCommonWords("The yellow sun is high in the blue sky.", true); //r
 //with overwritten common words:
 keyworder.setOptions({common: ["blue", "green", "red"], overwrite: true});
 keyworder.stripCommonWords("The yellow sun is high in the blue sky."); //returns "The yellow sun is high in the sky."
-```javascript
+```
 
 `keyworder.stripAndMatch(text, stripPunctuation)`
 -------------------------------------------------
