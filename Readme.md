@@ -7,6 +7,18 @@ Keyworder.js is a simple javascript library that takes a block of text and allow
 The common set of words to be stripped are by default the 100 most used words in English, but can be overwritten or added if desired. 
 There are no keywords set by default, and instead need to be set if that function is wanted to be used.
 
+Common Words
+===========
+The default common word list is generated from http://en.wikipedia.org/wiki/Most_common_words_in_English and are as follows:
+
+the, be, of, to, and, in, a, that, have, I, it, for, not, on, with, he, as, you, do, at, is, this, 
+but, his, by, from, they, we, say, her, she, or, an, we, will, my, one, all, would, there, their, what, so, 
+up, out, if, about, who, get, which, go, me, when, make, can, like, time, no, just, him, know, take, people, into, 
+year, your, good, some, could, them, see, other, than, then, now, look, only, come, its, over, think, also, back, after, 
+use, two, how, our, work, first, well, way, even, new, want, because, any, these, give, day, most, us
+
+This list of words can be overwritten or added to using the `keyworder.setOptions(options)` function.
+
 Functions
 =========
 `keyworder.setOptions(options)`
